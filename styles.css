@@ -1,0 +1,127 @@
+:root {
+    --color-text-on-light: rgba(0, 0, 0, .8);
+    --color-text-on-dark: rgba(255, 255, 255, 1);
+    --color-text-on-dark-lighter: rgba(255, 255, 255, .6);
+    --color-secondary: #0c2738;
+    --color-text-on-secondary: var(--color-text-on-dark);
+    --color-primary: #9b062c;
+    --color-text-on-primary: var(--color-text-on-dark);
+    --color-tertiary: #dfa551;
+
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+
+    --font-size-small: 0.8rem;
+    --font-size-large: 1.44rem;
+
+    --font-weight-light: 300;
+    --font-weight-bold: 500;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+}
+strong {
+    font-weight: var(--font-weight-bold);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text-on-light);
+    line-height: 1.5;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-text-on-primary);
+    height: 90vh;
+}
+
+.brand {
+    padding: var(--spacing-small);
+}
+
+.brand .logo {
+    height: 3rem;
+    width: auto;
+    padding: 0.2rem 0;
+}
+
+.main .title {
+    font-size: var(--font-size-large);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: var(--font-weight-bold);
+}
+
+.main .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.about {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location {
+    width: 100%;
+    padding: var(--spacing-large);
+    max-width: 50rem;
+}
+
+.map {
+    width: 100%;
+    height: 20rem;
+    border: 0;
+}
+
+.description {
+    padding: var(--spacing-large);
+    max-width: 20rem;
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-large);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    color: var(--color-text-on-dark-lighter);
+    padding: var(--spacing-large);
+}
+
+.slogan {
+    color: var(--color-tertiary);
+    padding: var(--spacing-small);
+}
+
+.copyright-message {
+    font-size: var(--font-size-small);
+    padding: var(--spacing-small);
+}
+
